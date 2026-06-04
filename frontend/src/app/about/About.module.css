@@ -1,0 +1,413 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 4rem 4rem 4rem; /* Increased top padding for navbar */
+}
+
+.sectionNumber {
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  margin-bottom: 1rem;
+}
+
+.heroSection {
+  margin-bottom: 4rem;
+}
+
+.introSection {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  padding-left: 20%;
+}
+
+.label {
+  font-weight: 700;
+  font-size: var(--fs-base);
+  min-width: 200px;
+  text-transform: uppercase;
+}
+
+.textContent {
+  font-size: var(--fs-lg);
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 6rem;
+}
+
+.imageWrapper {
+  width: 300px;
+  height: 400px;
+}
+
+.trainImage {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  background-image: url('https://images.unsplash.com/photo-1541818224535-6187b5a5bb1a?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.skillsSection {
+  margin-bottom: 8rem;
+  padding-left: 20%;
+}
+
+.skillRow {
+  display: flex;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+
+.skillList {
+  font-size: var(--fs-md);
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+/* Certificates Section */
+.certSection {
+  margin-bottom: 6rem;
+  padding-left: 20%;
+}
+
+.certHeading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+}
+
+.certCard {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.certImageWrapper {
+  flex-shrink: 0;
+  width: 250px;
+  height: 175px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.certImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.certContent {
+  flex: 1;
+}
+
+.certHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.certTitle {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.certBadge {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.certYear {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  color: var(--gray-text);
+}
+
+.certDesc {
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--gray-text);
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.certDivider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Studies Section */
+.studiesSection {
+  margin-bottom: 6rem;
+  padding-left: 20%;
+}
+
+.studiesHeading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+
+.studyCard {
+  margin-bottom: 1.5rem;
+}
+
+.studyInstitution {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.studyDesc {
+  font-size: var(--fs-base);
+  font-weight: 400;
+  color: var(--gray-text);
+}
+
+/* Interests Section */
+.interestsSection {
+  margin-bottom: 8rem;
+}
+
+.interestRow {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+  padding-left: 20%;
+}
+
+/* Trip Notes Section */
+.tripNotesSection {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tripGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 100px);
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.tripImg {
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+/* Placeholder layouts for the masonry effect */
+.img1 { grid-column: 2 / 5; grid-row: 3 / 6; background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=1000'); }
+.img2 { grid-column: 5 / 8; grid-row: 1 / 4; background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000'); }
+.img3 { grid-column: 8 / 11; grid-row: 2 / 5; background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000'); }
+.img4 { grid-column: 4 / 9; grid-row: 5 / 8; background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1000'); }
+.img5 { grid-column: 9 / 12; grid-row: 5 / 7; background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1000'); }
+.img6 { grid-column: 2 / 4; grid-row: 6 / 8; background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1000'); }
+.img7 { grid-column: 10 / 12; grid-row: 7 / 9; background-image: url('https://images.unsplash.com/photo-1504150558240-0b4fd8946624?q=80&w=1000'); }
+
+.tripTitleWrapper {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.tripTitle {
+  font-size: clamp(5rem, 15vw, 12rem);
+  font-weight: 800;
+  line-height: 0.85;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+/* Chat Section */
+.chatSection {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatDivider {
+  border: none;
+  border-top: 1px solid var(--foreground);
+  margin-bottom: 2rem;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  margin-bottom: 4rem;
+}
+
+.chatContact {
+  display: flex;
+  gap: 3rem;
+}
+
+.chatSocial {
+  display: flex;
+  gap: 3rem;
+}
+
+.backToTop {
+  cursor: none; /* Rely on custom cursor */
+}
+
+.hugeChatTextWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hugeChatText {
+  font-size: clamp(4rem, 12vw, 14rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-align: center;
+  line-height: 0.8;
+  color: var(--foreground);
+}
+
+.hugeChatText::first-letter {
+  color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+  .introSection, .skillsSection, .interestRow, .certSection, .studiesSection {
+    padding-left: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .tripGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .chatHeader {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+  .imageWrapper {
+    width: 100%;
+    height: 400px;
+  }
+  .chatContact, .chatSocial {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .certCard {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .certImageWrapper {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+  }
+}
+
+/* Modal Lightbox styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+  display: flex;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 300;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  transition: transform 0.2s;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

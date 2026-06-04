@@ -1,0 +1,137 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  padding: 8rem 4rem;
+  align-items: center;
+}
+
+.leftCol {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hugeText {
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+.rightCol {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.infoBlock {
+  max-width: 400px;
+}
+
+.subtitle {
+  color: var(--orange);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  color: var(--gray-text);
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detailRow {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.detailLabel {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: #b0b0b0;
+  letter-spacing: 0.05em;
+  width: 50px;
+}
+
+.detailValue {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: #b0b0b0;
+  transition: color 0.2s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.socialLink:hover {
+  color: var(--foreground);
+  text-decoration-color: var(--foreground);
+}
+
+.verticalBadge {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center right;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #a3a3a3;
+}
+
+.greenDot {
+  width: 6px;
+  height: 6px;
+  background-color: #4ade80;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    padding: 8rem 2rem;
+    gap: 4rem;
+  }
+  
+  .leftCol, .rightCol {
+    flex: none;
+    width: 100%;
+  }
+  
+  .verticalBadge {
+    display: none;
+  }
+}
