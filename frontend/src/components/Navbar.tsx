@@ -13,9 +13,9 @@ export default function Navbar() {
         <Link href="/contact">Contact</Link>
       </div>
       <div className={styles.socialLinks}>
-        <a href="https://github.com" target="_blank" rel="noreferrer">Github</a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="mailto:asinukumarage@gmail.com">Email</a>
+        <a href="https://github.com/asinugit" target="_blank" rel="noreferrer">Github</a>
+        <a href="https://www.linkedin.com/in/asinuu" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:asinuu07@gmail.com">Email</a>
       </div>
     </nav>
   );

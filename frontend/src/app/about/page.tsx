@@ -106,7 +106,7 @@ export default function About() {
             <p>Testing & QA</p>
           </div>
         </div>
-        
+
         <hr className={styles.divider} />
 
         <div className={styles.skillRow}>
@@ -136,9 +136,9 @@ export default function About() {
       <section className={styles.interestsSection}>
         <div className={styles.sectionNumber}>04/</div>
         <h1 className="heading-large">INTERESTS</h1>
-        
+
         <div className={styles.interestRow}>
-          <div className={styles.label}>MOTORBIKE ROAD<br/>TRIPS</div>
+          <div className={styles.label}>MOTORBIKE ROAD<br />TRIPS</div>
           <div className={styles.textContent}>
             <p>
               I love the feeling of freedom on a motorbike. On
@@ -177,7 +177,7 @@ export default function About() {
         </div>
         <div className={styles.tripTitleWrapper}>
           <h1 className={styles.tripTitle}>
-            TRIP<br/>NOTES
+            TRIP<br />NOTES
           </h1>
         </div>
       </section>
@@ -187,8 +187,8 @@ export default function About() {
         <hr className={styles.chatDivider} />
         <div className={styles.chatHeader}>
           <div className={styles.chatContact}>
-            <a href="mailto:asinukumarage@gmail.com">asinukumarage@gmail.com</a>
-            <span>+84 393 277 584</span>
+            <a href="mailto:asinuu07@gmail.com">asinuu07@gmail.com</a>
+            <span>+94 771 786 294</span>
           </div>
           <div className={styles.chatSocial}>
             <a href="#">Github</a>
@@ -196,7 +196,7 @@ export default function About() {
             <a href="#" className={styles.backToTop}>Back to top &uarr;</a>
           </div>
         </div>
-        
+
         <div className={styles.hugeChatTextWrapper}>
           <h1 className={styles.hugeChatText}>
             Let&apos;s have a chat

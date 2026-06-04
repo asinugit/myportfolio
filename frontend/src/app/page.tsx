@@ -105,7 +105,7 @@ export default function Home() {
           <h2 className={styles.nameHeading}>ASINU<br />KUMARAGE</h2>
           <div className={styles.locationBlock}>
             <button className={styles.arrowBtn} onClick={() => goTo(1)}>→</button>
-            <p>I BASED IN<br />SRI LANKA,<br />PASSIONATE IN ARCHITECT &amp; UI</p>
+            <p>I BASED IN<br />SRI LANKA,<br />PASSIONATE IN SOFTWARE ENGINEERING</p>
           </div>
         </div>
       </section>
@@ -172,10 +172,10 @@ export default function Home() {
                   <div className={styles.mockLine} style={{ width: '80%' }} />
                   <div className={styles.mockLine} style={{ width: '45%' }} />
                 </div>
-                <div className={styles.mockBadge}>AI-Powered<br/>Healthcare</div>
+                <div className={styles.mockBadge}>AI-Powered<br />Healthcare</div>
               </div>
               <div className={styles.mockCards}>
-                {[1,2,3].map(i => <div key={i} className={styles.mockCard} />)}
+                {[1, 2, 3].map(i => <div key={i} className={styles.mockCard} />)}
               </div>
             </div>
           </div>
