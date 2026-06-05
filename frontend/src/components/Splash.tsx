@@ -6,7 +6,7 @@ export default function Splash() {
       <div className={styles.content}>
         <h1 className={styles.name}>ASINU</h1>
         <div className={styles.line} />
-        <p className={styles.subtitle}>CREATIVE DEVELOPER • 2026</p>
+        <p className={styles.subtitle}>SOFTWARE ENGINEER UNDERGRADUATE!</p>
       </div>
     </div>
   );

@@ -248,9 +248,8 @@ export default function Works() {
           <span className={styles.projectCount}>0{projectsData.length}</span>
         </div>
 
-        <div className={styles.centerIndicator}>
-          <div className={styles.indicatorDot} />
-        </div>
+
+
 
         <div className={styles.overviewSection}>
           <div className={styles.label}>OVERVIEW</div>
