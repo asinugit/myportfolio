@@ -1,0 +1,25 @@
+{
+  "title": "HealthSync – AI-Powered Healthcare System",
+  "date": "May 18, 2026",
+  "author": "Asinu Kumarage",
+  "githubUrl": "https://github.com/asinugit/HealthSync",
+  "demoUrl": "",
+  "coverImage": "/projects/healthsync/cover.jpg",
+  "overview": "HealthSync is a microservices-based healthcare platform designed to connect patients, doctors, and payments seamlessly. Featuring AI-powered diagnostic suggestions and automated appointment scheduling, it provides a comprehensive digital clinic experience.",
+  "keyFeatures": [
+    "**Microservices architecture** dividing business logic into Authentication, Patient management, and Payment processing services",
+    "**Stripe integration** offering a secure and sandboxed billing flow for doctors and clinic appointments",
+    "**AI Symptom checker** leveraging Gemini models to give quick insights on patient symptoms before doctor review",
+    "**MongoDB databases** with service-specific instances to prevent service coupling and ensure isolation",
+    "**Automated notification indicators** with a real-time polling mechanism in the navbar for unread patient updates"
+  ],
+  "technologies": [
+    "Spring Boot",
+    "Java",
+    "React.js",
+    "MongoDB",
+    "Stripe API",
+    "Google Gemini API",
+    "Docker"
+  ]
+}

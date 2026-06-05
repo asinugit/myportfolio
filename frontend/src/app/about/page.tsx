@@ -88,46 +88,48 @@ export default function About() {
         </div>
       </section>
 
-      <section className={styles.imageSection}>
+      <section className={styles.skillsWithPhoto}>
+        {/* Left: photo */}
         <div className={styles.imageWrapper}>
           <div className={styles.trainImage}></div>
         </div>
-      </section>
 
-      <section className={styles.skillsSection}>
-        <div className={styles.skillRow}>
-          <div className={styles.label}>DEVELOPMENT</div>
-          <div className={styles.skillList}>
-            <p>Backend Engineering</p>
-            <p>API Design</p>
-            <p>Database Design</p>
-            <p>Query Optimization</p>
-            <p>Background Jobs</p>
-            <p>Testing & QA</p>
+        {/* Right: skill rows */}
+        <div className={styles.skillsSection}>
+          <div className={styles.skillRow}>
+            <div className={styles.label}>DEVELOPMENT</div>
+            <div className={styles.skillList}>
+              <p>Backend Engineering</p>
+              <p>API Design</p>
+              <p>Database Design</p>
+              <p>Query Optimization</p>
+              <p>Background Jobs</p>
+              <p>Testing &amp; QA</p>
+            </div>
           </div>
-        </div>
 
-        <hr className={styles.divider} />
+          <hr className={styles.divider} />
 
-        <div className={styles.skillRow}>
-          <div className={styles.label}>INTERFACE</div>
-          <div className={styles.skillList}>
-            <p>Frontend Engineering</p>
-            <p>Micro-interaction</p>
-            <p>CSS Animation</p>
-            <p>UI Tooling</p>
+          <div className={styles.skillRow}>
+            <div className={styles.label}>INTERFACE</div>
+            <div className={styles.skillList}>
+              <p>Frontend Engineering</p>
+              <p>Micro-interaction</p>
+              <p>CSS Animation</p>
+              <p>UI Tooling</p>
+            </div>
           </div>
-        </div>
 
-        <hr className={styles.divider} />
+          <hr className={styles.divider} />
 
-        <div className={styles.skillRow}>
-          <div className={styles.label}>TECHNOLOGIES</div>
-          <div className={styles.skillList}>
-            <p>Ruby • Rails • Postgres • Redis</p>
-            <p>React.js • Lit • TailwindCSS • MUI</p>
-            <p>GSAP • Framer Motion</p>
-            <p>Docker • Jenkins • Ansible • Github Actions</p>
+          <div className={styles.skillRow}>
+            <div className={styles.label}>TECHNOLOGIES</div>
+            <div className={styles.skillList}>
+              <p>Ruby · Rails · Postgres · Redis</p>
+              <p>React.js · Lit · TailwindCSS · MUI</p>
+              <p>GSAP · Framer Motion</p>
+              <p>Docker · Jenkins · Ansible · Github Actions</p>
+            </div>
           </div>
         </div>
       </section>
@@ -166,20 +168,26 @@ export default function About() {
 
       {/* Trip Notes Section */}
       <section className={styles.tripNotesSection}>
-        <div className={styles.tripGrid}>
-          <div className={`${styles.tripImg} ${styles.img1}`}></div>
-          <div className={`${styles.tripImg} ${styles.img2}`}></div>
-          <div className={`${styles.tripImg} ${styles.img3}`}></div>
-          <div className={`${styles.tripImg} ${styles.img4}`}></div>
-          <div className={`${styles.tripImg} ${styles.img5}`}></div>
-          <div className={`${styles.tripImg} ${styles.img6}`}></div>
-          <div className={`${styles.tripImg} ${styles.img7}`}></div>
-        </div>
-        <div className={styles.tripTitleWrapper}>
-          <h1 className={styles.tripTitle}>
-            TRIP<br />NOTES
-          </h1>
-        </div>
+        {/* Scattered photos — absolutely positioned */}
+        <div className={styles.tn_peach1}></div>
+        <div className={styles.tn_img1}></div>
+        <div className={styles.tn_img2}></div>
+        <div className={styles.tn_img3}></div>
+        <span className={styles.tn_vertName}>ASINU</span>
+        <div className={styles.tn_imgLeft}></div>
+        <div className={styles.tn_bigImg}></div>
+        <div className={styles.tn_img4}></div>
+        <div className={styles.tn_img5}></div>
+        <div className={styles.tn_img6}></div>
+        <div className={styles.tn_img7}></div>
+        <div className={styles.tn_img8}></div>
+        <div className={styles.tn_img9}></div>
+        <div className={styles.tn_img10}></div>
+        <div className={styles.tn_img11}></div>
+        <div className={styles.tn_peach2}></div>
+        {/* Central TRIP NOTES title */}
+        <h1 className={styles.tripTitle}>TRIP<br />NOTES</h1>
+        <p className={styles.tripCaption}>Little stories from<br />faraway places.</p>
       </section>
 
       {/* Let's have a chat section */}

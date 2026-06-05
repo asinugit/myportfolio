@@ -1,0 +1,23 @@
+{
+  "title": "SwiftRide – Urban Ride-Hailing Mobile App",
+  "date": "April 12, 2026",
+  "author": "Asinu Kumarage",
+  "githubUrl": "https://github.com/asinugit",
+  "demoUrl": "",
+  "coverImage": "/projects/swiftride/cover.jpg",
+  "overview": "SwiftRide is a cross-platform mobile ride-hailing application designed to solve urban commuting friction. It features real-time vehicle dispatching, map integration, and an in-app payment interface.",
+  "keyFeatures": [
+    "**Real-time driver matching** powered by WebSockets to ensure low-latency dispatch and routing",
+    "**Mapbox SDK integration** with path plotting, traffic warnings, and live ETA tracking",
+    "**Cross-platform mobile client** built with React Native for native-speed UI performance",
+    "**Secure payment flows** supporting credit cards, mobile wallets, and ride credit systems"
+  ],
+  "technologies": [
+    "React Native",
+    "Node.js",
+    "WebSockets",
+    "Mapbox SDK",
+    "PostgreSQL",
+    "Redis"
+  ]
+}

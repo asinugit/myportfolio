@@ -46,7 +46,135 @@
 .socialLinks a { transition: opacity 0.2s; }
 .socialLinks a:hover { opacity: 0.6; }
 
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--ui-text);
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+/* Mobile Menu Overlay matching the mockup */
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b0b0b;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem 3rem 1.5rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.overlayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.overlayLogo {
+  font-size: var(--fs-base);
+  font-weight: 800;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.overlayContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+  margin-top: -2rem;
+}
+
+.overlayItem {
+  position: relative;
+  text-align: center;
+}
+
+.overlayLabel {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.overlayContent a {
+  font-size: clamp(3rem, 10vw, 4.5rem);
+  font-weight: 800;
+  color: var(--orange);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: opacity 0.2s;
+}
+
+.overlayContent a:hover {
+  opacity: 0.8;
+}
+
+.overlayFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: #888;
+}
+
+.overlayEmail {
+  text-transform: lowercase;
+}
+
+.overlaySocials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+}
+
+.overlaySocials a {
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.overlaySocials a:hover {
+  opacity: 0.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @media (max-width: 768px) {
   .nav { padding: 1.25rem 1.5rem; }
   .centerLinks { display: none; }
+  .socialLinks { display: none; }
+  .menuBtn { display: block; }
 }

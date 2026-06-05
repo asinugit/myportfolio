@@ -148,102 +148,11 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════
-          SECTION 03 — Work
-      ══════════════════════════════════════ */}
-      <section className={styles.section}>
-        <div className={styles.s3Layout}>
-
-          {/* Project icon */}
-          <div className={styles.projectIcon}>
-            <div className={styles.iconInner} />
-          </div>
-
-          {/* Browser mockup */}
-          <div className={styles.browserMock}>
-            <div className={styles.browserBar}>
-              <span className={styles.dot} /><span className={styles.dot} /><span className={styles.dot} />
-              <span className={styles.browserUrl}>healthsync.app</span>
-            </div>
-            <div className={styles.browserContent}>
-              <div className={styles.mockNav} />
-              <div className={styles.mockHero}>
-                <div className={styles.mockHeroText}>
-                  <div className={styles.mockLine} style={{ width: '60%' }} />
-                  <div className={styles.mockLine} style={{ width: '80%' }} />
-                  <div className={styles.mockLine} style={{ width: '45%' }} />
-                </div>
-                <div className={styles.mockBadge}>AI-Powered<br />Healthcare</div>
-              </div>
-              <div className={styles.mockCards}>
-                {[1, 2, 3].map(i => <div key={i} className={styles.mockCard} />)}
-              </div>
-            </div>
-          </div>
-
-          {/* Code snippet */}
-          <div className={styles.codePanel}>
-            <pre className={styles.codePre}>{`{
-  "patient": {
-    "id": "pt_001",
-    "name": "Asinu K.",
-    "status": "active"
-  },
-  "appointment": {
-    "date": "2025-01-15",
-    "doctor": "Dr. Silva",
-    "type": "checkup"
-  },
-  "payment": {
-    "amount": 2500,
-    "currency": "LKR",
-    "status": "paid"
-  }
-}`}</pre>
-          </div>
-        </div>
-
-        {/* Project info bar */}
-        <div className={styles.projectBar}>
-          <div className={styles.projectNum}>03/</div>
-          <div className={styles.projectName}>
-            Health<br />Sync
-          </div>
-          <p className={styles.projectDesc}>
-            (→)&nbsp;&nbsp;A microservices-based healthcare platform connecting patients,
-            doctors and payments — built with Spring Boot, React &amp; MongoDB.
-          </p>
-          <div className={styles.projectMeta}>
-            <span>2025</span>
-            <span>Back-end Dev</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════
-          SECTION 04 — Statement
-      ══════════════════════════════════════ */}
-      <section className={styles.section}>
-        <div className={styles.s4Layout}>
-          <span className={styles.sectionNum}>04/</span>
-
-          <div className={styles.s4Tags}>
-            <span>Creative<br />Developer</span>
-            <span>+ Problem<br />Solver</span>
-          </div>
-
-          <p className={styles.s4Quote}>
-            Crafting elegant solutions<br />to complex problems
-          </p>
-
-          <h1 className={styles.s4Name}>ASINU</h1>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════
-          SECTION 05 — Contact (dark)
+          SECTION 03 — Contact (dark)
       ══════════════════════════════════════ */}
       <section className={`${styles.section} ${styles.sectionDark}`} data-dark="true">
         <div className={styles.s5Layout}>
+          <span className={styles.sectionNum} style={{ color: 'var(--contact-fg)', marginBottom: '2rem', display: 'block' }}>03/</span>
           <h1 className={styles.chatHeading}>Let&apos;s have a chat</h1>
 
           <div className={styles.contactRow}>

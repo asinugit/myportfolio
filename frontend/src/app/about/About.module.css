@@ -1,7 +1,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 8rem 4rem 4rem 4rem; /* Increased top padding for navbar */
+  padding: 8rem 4rem 4rem 4rem;
+  /* Increased top padding for navbar */
 }
 
 .sectionNumber {
@@ -35,14 +36,17 @@
   max-width: 600px;
 }
 
-.imageSection {
+/* Photo + Skills side-by-side */
+.skillsWithPhoto {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 6rem;
+  gap: 4rem;
+  margin-bottom: 8rem;
+  align-items: flex-start;
 }
 
 .imageWrapper {
-  width: 300px;
+  flex-shrink: 0;
+  width: 280px;
   height: 400px;
 }
 
@@ -50,14 +54,13 @@
   width: 100%;
   height: 100%;
   background-color: #f0f0f0;
-  background-image: url('https://images.unsplash.com/photo-1541818224535-6187b5a5bb1a?q=80&w=2070&auto=format&fit=crop');
+  background-image: url('/developer.png');
   background-size: cover;
   background-position: center;
 }
 
 .skillsSection {
-  margin-bottom: 8rem;
-  padding-left: 20%;
+  flex: 1;
 }
 
 .skillRow {
@@ -200,58 +203,204 @@
   padding-left: 20%;
 }
 
-/* Trip Notes Section */
+/* ============================================================
+   TRIP NOTES — scattered absolute collage
+   ============================================================ */
 .tripNotesSection {
   position: relative;
   width: 100%;
-  min-height: 800px;
+  height: 620px;
   margin-bottom: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: visible;
 }
 
-.tripGrid {
+/* Base photo tile - sharp corners like target image */
+.tripNotesSection>div {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 100px);
-  gap: 1rem;
-  pointer-events: none;
-}
-
-.tripImg {
-  background-color: #e5e5e5;
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
+  border-radius: 0 !important;
 }
 
-/* Placeholder layouts for the masonry effect */
-.img1 { grid-column: 2 / 5; grid-row: 3 / 6; background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=1000'); }
-.img2 { grid-column: 5 / 8; grid-row: 1 / 4; background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000'); }
-.img3 { grid-column: 8 / 11; grid-row: 2 / 5; background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000'); }
-.img4 { grid-column: 4 / 9; grid-row: 5 / 8; background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1000'); }
-.img5 { grid-column: 9 / 12; grid-row: 5 / 7; background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1000'); }
-.img6 { grid-column: 2 / 4; grid-row: 6 / 8; background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1000'); }
-.img7 { grid-column: 10 / 12; grid-row: 7 / 9; background-image: url('https://images.unsplash.com/photo-1504150558240-0b4fd8946624?q=80&w=1000'); }
-
-.tripTitleWrapper {
-  position: relative;
-  z-index: 10;
-  text-align: center;
+/* ── Peach placeholder boxes ── */
+.tn_peach1 {
+  background-color: #f5cba3 !important;
+  left: 17%;
+  top: 110px;
+  width: 15%;
+  height: 90px;
 }
 
+.tn_peach2 {
+  background-color: #f5cba3 !important;
+  left: 33%;
+  top: 570px;
+  width: 15%;
+  height: 80px;
+}
+
+/* ── Top row — small photos ── */
+.tn_img1 {
+  /* 01.JPG */
+  background-image: url('/trip-notes/01.JPG');
+  left: 33%;
+  top: 20px;
+  width: 15%;
+  height: 180px;
+}
+
+.tn_img2 {
+  /* 02.JPG */
+  background-image: url('/trip-notes/02.JPG');
+  left: 49%;
+  top: 60px;
+  width: 18%;
+  height: 140px;
+}
+
+.tn_img3 {
+  /* 03.jpg */
+  background-image: url('/trip-notes/03.jpg');
+  left: 68%;
+  top: 110px;
+  width: 15%;
+  height: 110px;
+}
+
+/* ── Far left lone photo ── */
+.tn_imgLeft {
+  /* 04.jpg */
+  background-image: url('/trip-notes/04.jpg');
+  left: 5%;
+  top: 250px;
+  width: 11%;
+  height: 110px;
+}
+
+/* ── Big central-left photo ── */
+.tn_bigImg {
+  /* 05.JPG */
+  background-image: url('/trip-notes/05.JPG');
+  left: 17%;
+  top: 210px;
+  width: 31%;
+  height: 230px;
+}
+
+/* ── Centre-right photo ── */
+.tn_img4 {
+  /* 06.JPG */
+  background-image: url('/trip-notes/06.JPG');
+  left: 49%;
+  top: 210px;
+  width: 18%;
+  height: 110px;
+}
+
+/* ── Right mid photo ── */
+.tn_img5 {
+  /* 07.JPG */
+  background-image: url('/trip-notes/07.JPG');
+  left: 49%;
+  top: 330px;
+  width: 18%;
+  height: 100px;
+}
+
+/* ── Bottom centre photo ── */
+.tn_img6 {
+  /* 08.JPG */
+  background-image: url('/trip-notes/08.JPG');
+  left: 49%;
+  top: 440px;
+  width: 18%;
+  height: 90px;
+}
+
+/* ── Bottom centre-right photo ── */
+.tn_img7 {
+  /* 09.JPG */
+  background-image: url('/trip-notes/09.JPG');
+  left: 49%;
+  top: 540px;
+  width: 9%;
+  height: 100px;
+}
+
+/* ── Remaining bottom slots as neutral placeholders ── */
+.tn_img8 {
+  background-color: #e8ddd0;
+  left: 17%;
+  top: 450px;
+  width: 15%;
+  height: 100px;
+}
+
+.tn_img9 {
+  background-color: #e8ddd0;
+  left: 33%;
+  top: 450px;
+  width: 15%;
+  height: 110px;
+}
+
+.tn_img10 {
+  background-color: #e8ddd0;
+  left: 68%;
+  top: 230px;
+  width: 15%;
+  height: 110px;
+}
+
+.tn_img11 {
+  background-color: #e8ddd0;
+  left: 68%;
+  top: 350px;
+  width: 15%;
+  height: 80px;
+}
+
+/* ── TRIP NOTES title ── */
 .tripTitle {
-  font-size: clamp(5rem, 15vw, 12rem);
+  position: absolute;
+  left: 32%;
+  top: 27%;
+  font-size: clamp(3.2rem, 8.5vw, 6.5rem);
   font-weight: 800;
-  line-height: 0.85;
+  line-height: 0.88;
   color: var(--orange);
   text-transform: uppercase;
+  z-index: 10;
+  pointer-events: none;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* ── Vertical name ── */
+.tn_vertName {
+  position: absolute;
+  left: 84%;
+  top: 130px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--foreground);
+  z-index: 10;
+}
+
+/* ── Caption ── */
+.tripCaption {
+  position: absolute;
+  left: 59%;
+  top: 550px;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--gray-text);
+  z-index: 10;
+  pointer-events: none;
 }
 
 /* Chat Section */
@@ -286,7 +435,8 @@
 }
 
 .backToTop {
-  cursor: none; /* Rely on custom cursor */
+  cursor: none;
+  /* Rely on custom cursor */
 }
 
 .hugeChatTextWrapper {
@@ -310,14 +460,28 @@
 }
 
 @media (max-width: 1024px) {
-  .introSection, .skillsSection, .interestRow, .certSection, .studiesSection {
+
+  .introSection,
+  .skillsSection,
+  .interestRow,
+  .certSection,
+  .studiesSection {
     padding-left: 0;
     flex-direction: column;
     gap: 2rem;
   }
-  .tripGrid {
-    grid-template-columns: repeat(4, 1fr);
+
+  .skillsWithPhoto {
+    flex-direction: column;
+    gap: 3rem;
   }
+
+  .photoColumn {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+  }
+
   .chatHeader {
     flex-direction: column;
     gap: 2rem;
@@ -326,20 +490,79 @@
 
 @media (max-width: 768px) {
   .main {
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 6rem 1.5rem 2rem 1.5rem;
   }
-  .imageWrapper {
+
+  .skillsWithPhoto {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photoColumn {
     width: 100%;
-    height: 400px;
+    height: 380px;
   }
-  .chatContact, .chatSocial {
+
+  /* Trip Notes Responsive Stacking */
+  .tripNotesSection {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 5rem;
+  }
+
+  .tripNotesSection>div {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  /* Hide placeholders and name tag on mobile */
+  .tn_peach1,
+  .tn_peach2,
+  .tn_img8,
+  .tn_img9,
+  .tn_img10,
+  .tn_img11,
+  .tn_vertName {
+    display: none !important;
+  }
+
+  .tripTitle {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    font-size: 3rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.5rem;
+    order: -2;
+    /* Title at the top */
+  }
+
+  .tripCaption {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    font-size: var(--fs-base) !important;
+    margin-bottom: 1.5rem;
+    order: -1;
+    /* Caption below title */
+  }
+
+  .chatContact,
+  .chatSocial {
     flex-direction: column;
     gap: 1rem;
   }
+
   .certCard {
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .certImageWrapper {
     width: 100%;
     max-width: 320px;
@@ -403,11 +626,23 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleUp {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

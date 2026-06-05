@@ -51,7 +51,7 @@ a {
 }
 
 /* ── Custom Cursor ── */
-.custom-cursor {
+.custom-cursor-ring {
   position: fixed;
   top: 0;
   left: 0;
@@ -60,39 +60,74 @@ a {
   border: 1.5px solid var(--foreground);
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+  z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              height 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
 }
 
-.custom-cursor::after {
-  content: '';
-  width: 5px;
-  height: 5px;
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
   background-color: var(--foreground);
   border-radius: 50%;
-  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  pointer-events: none;
+  z-index: 99999;
+  transition: opacity 0.2s ease, background-color 0.3s ease;
 }
 
-.custom-cursor.hovering {
+/* Hover link states */
+.custom-cursor-ring.hovering {
   width: 52px;
   height: 52px;
-  background-color: rgba(10,10,10,0.06);
+  background-color: rgba(10, 10, 10, 0.05);
+  border-color: var(--foreground);
 }
 
-.custom-cursor.hovering::after {
-  width: 8px;
-  height: 8px;
+.custom-cursor-dot.hovering {
+  opacity: 0; /* hide inner dot when expanding */
 }
 
-/* dark-section cursor */
-.custom-cursor.dark {
+/* Text hover overlay (e.g., VIEW) */
+.custom-cursor-ring.has-text {
+  width: 68px;
+  height: 68px;
+  background-color: var(--foreground);
+  border-color: var(--foreground);
+}
+
+.cursor-text {
+  font-family: 'Barlow', sans-serif;
+  color: var(--background);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Dark section styles */
+.custom-cursor-ring.dark {
   border-color: var(--contact-fg);
 }
-.custom-cursor.dark::after {
+.custom-cursor-ring.dark.hovering {
+  background-color: rgba(232, 220, 200, 0.06);
+}
+.custom-cursor-ring.dark.has-text {
+  background-color: var(--contact-fg);
+  border-color: var(--contact-fg);
+}
+.custom-cursor-ring.dark .cursor-text {
+  color: var(--contact-bg);
+}
+.custom-cursor-dot.dark {
   background-color: var(--contact-fg);
 }
 

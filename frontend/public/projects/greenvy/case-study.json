@@ -1,0 +1,25 @@
+{
+  "title": "Greenvy – Sustainable Product Rating Platform",
+  "date": "June 4, 2026",
+  "author": "Asinu Kumarage",
+  "githubUrl": "https://github.com/asinugit",
+  "demoUrl": "https://greenvy-demo.vercel.app",
+  "coverImage": "/projects/greenvy/cover.jpg",
+  "overview": "Greenvy is a sustainable product rating platform focused on responsible consumption and aligned with SDG 12. It combines a blog management workflow, AI-assisted moderation, and an education hub to help users publish, review, and learn from sustainability content.",
+  "keyFeatures": [
+    "**Blog approval workflow** with pending submissions reviewed by admins before publication",
+    "**Google Gemini API moderation** to detect inappropriate, toxic, or off-topic sustainability content",
+    "**AI-driven Education Hub** that validates SDG-12 relevance and generates summaries, quizzes, glossary terms, actionable tips, and learning guides",
+    "**Secure REST APIs** with authentication, role-based access control, pagination, and like/unlike engagement",
+    "**Service-based architecture** using Express controllers, middleware, and Mongoose models for scalability"
+  ],
+  "technologies": [
+    "Node.js",
+    "Express.js",
+    "React",
+    "MongoDB",
+    "Google Gemini API",
+    "Jest",
+    "Supertest"
+  ]
+}

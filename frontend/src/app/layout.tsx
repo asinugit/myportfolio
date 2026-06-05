@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
+import SplashWrapper from '@/components/SplashWrapper';
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -20,10 +21,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={barlow.className}>
-        <CustomCursor />
-        <Navbar />
-        {children}
-        <Footer />
+        <SplashWrapper>
+          <CustomCursor />
+          <Navbar />
+          {children}
+          <Footer />
+        </SplashWrapper>
       </body>
     </html>
   );
