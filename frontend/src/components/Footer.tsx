@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; {new Date().getFullYear()} Portfolio
       </div>
       <div className={styles.right}>
-        Design &amp; code by Asinu
+        Coded by Asinu
       </div>
     </footer>
   );

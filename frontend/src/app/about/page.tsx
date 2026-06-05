@@ -97,14 +97,14 @@ export default function About() {
         {/* Right: skill rows */}
         <div className={styles.skillsSection}>
           <div className={styles.skillRow}>
-            <div className={styles.label}>DEVELOPMENT</div>
+            <div className={styles.label}>LANGUAGES</div>
             <div className={styles.skillList}>
-              <p>Backend Engineering</p>
-              <p>API Design</p>
-              <p>Database Design</p>
-              <p>Query Optimization</p>
-              <p>Background Jobs</p>
-              <p>Testing &amp; QA</p>
+              <p>Node.js</p>
+              <p>Express.js</p>
+              <p>MongoDB</p>
+              <p>React.js</p>
+              <p>Next.js</p>
+              <p>TailwindCSS</p>
             </div>
           </div>
 

@@ -74,8 +74,8 @@ export default function Home() {
 
         {/* W. Honors sidebar */}
         <div className={styles.honorsSidebar}>
-          <span className={styles.honorsW}>W.</span>
-          <span className={styles.honorsLabel}>Honors</span>
+          <span className={styles.honorsW}>G</span>
+          <span className={styles.honorsLabel}>Emoxy</span>
         </div>
 
         {/* Top row */}
@@ -85,7 +85,7 @@ export default function Home() {
             <p className={styles.sectionSubtitle}>From Sri Lanka with<br />Love</p>
           </div>
           <h1 className={`${styles.hugeHeading} ${styles.alignRight}`}>
-            CREATIVE<br />DEVELOPER
+            SOFTWARE<br />DEVELOPER
           </h1>
         </div>
 
@@ -156,11 +156,11 @@ export default function Home() {
           <h1 className={styles.chatHeading}>Let&apos;s have a chat</h1>
 
           <div className={styles.contactRow}>
-            <a href="mailto:asinukumarage@gmail.com" className={styles.contactPill}>
-              asinukumarage@gmail.com
+            <a href="mailto:asinuu07@gmail.com" className={styles.contactPill}>
+              asinuu07@gmail.com
             </a>
             <a href="tel:+94000000000" className={styles.contactPill}>
-              +94 77 000 0000
+              +94 77 178 6294
             </a>
             <button className={styles.backPill} onClick={() => goTo(0)}>
               ← &nbsp; Back
